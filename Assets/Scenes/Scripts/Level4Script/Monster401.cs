@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Monster401 : MonoBehaviour
 {
-    private Transform[] positions1;
+    public Transform[] positions1;
 
     public int index = 0;
     public float speed = 2f;
@@ -12,7 +12,7 @@ public class Monster401 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        positions1 = L4WayPoint.L4wayPoint1;
+        
     }
 
     // Update is called once per frame

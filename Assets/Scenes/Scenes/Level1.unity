@@ -770,6 +770,32 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4841689448903061817, guid: 69c25d73e6c23b746bc0c83d9c09122f, type: 3}
   m_PrefabInstance: {fileID: 1116895325}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &302055042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302055041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1b0ebf86f8fd684ead58cf1ebb1cccb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 1
+  EndGame: {fileID: 5234517}
+  GameOver: {fileID: 984882812}
+  movePoint: {fileID: 1116895326}
+  whatStopMovement:
+    serializedVersion: 2
+    m_Bits: 64
+  bloodBarText: {fileID: 634195347}
+  bloorBarImage: {fileID: 634195348}
+  starList:
+  - {fileID: 424417129}
+  - {fileID: 1325882235}
+  - {fileID: 151401628}
+  item: {fileID: 302055041}
 --- !u!1 &305912500
 GameObject:
   m_ObjectHideFlags: 0
@@ -10735,7 +10761,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 675013669838785400, guid: 29fb12e448420f642af737fa43775f77, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2537626614072874311, guid: 29fb12e448420f642af737fa43775f77, type: 3}
       propertyPath: m_SortingOrder
@@ -31233,7 +31259,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.2727273, y: 2.3772728}
+    oldSize: {x: 3.90625, y: 4.0859375}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -31579,7 +31605,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.2727273, y: 2.3772728}
+    oldSize: {x: 3.90625, y: 4.0859375}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

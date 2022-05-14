@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Monster400 : MonoBehaviour
 {
-    private Transform[] positions;
+    public Transform[] positions;
 
     public int index = 0;
     public float speed = 2f;
@@ -14,7 +14,7 @@ public class Monster400 : MonoBehaviour
     {
         if (positions == null)
         {
-            positions = L4WayPoint.L4wayPoint;
+            
         }
     }
 
