@@ -152,43 +152,6 @@ public class Level4move : MonoBehaviour
         //{
 
         //}
-
-        #region Level3
-        if (transform.childCount >= 3 && counter > 3)
-        {
-            number += 1;
-            width += 6;
-            bloorBarImage.sizeDelta = new Vector2(width, bloorBarImage.sizeDelta.y);
-            bloodBarText.text = number.ToString();
-            counter = 0;
-
-            if (number >= 41)
-            {
-                number = 40;
-                width = 240;
-                bloorBarImage.sizeDelta = new Vector2(width, bloorBarImage.sizeDelta.y);
-                bloodBarText.text = number.ToString();
-            }
-
-           
-           
-        }
-
-        if (ani.GetCurrentAnimatorStateInfo(0).IsName("Injured"))
-        {
-            aniCounter += Time.deltaTime;
-            if(aniCounter > 2)
-            {
-                transform.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
-                transform.GetComponent<BoxCollider2D>().isTrigger = false;
-                ani.SetBool("Injured", false);
-                aniCounter = 0;
-            }
-        }
-        #endregion
-
-
-
     }
 
 
@@ -264,76 +227,7 @@ public class Level4move : MonoBehaviour
             }
         }
         #endregion
-
-
-        #region Level3Trigger
-        if (collision.tag == "Partner1")
-        {
-            collision.transform.SetParent(this.transform);
-            collision.transform.localPosition = new Vector3(-0.53f, 0.21f, 0);
-            collision.transform.localScale = new Vector3(0.4f, 0.5f, 0);
-            collision.transform.GetComponent<BoxCollider2D>().enabled = false;
-            score += 6;
-
-        }
-        if (collision.tag == "Partner2")
-        {
-            collision.transform.SetParent(this.transform);
-            collision.transform.localPosition = new Vector3(-0.48f, -0.72f, 0);
-            collision.transform.localScale = new Vector3(0.28f, 0.4f, 0);
-            score += 6;
-
-        }
-        if (collision.tag == "Partner3")
-        {
-            collision.transform.SetParent(this.transform);
-            collision.transform.localPosition = new Vector3(0.6f, -0.18f, 0);
-            collision.transform.localScale = new Vector3(0.5f, 0.6f, 0);
-            score += 6;
-
-        }
-
-        #endregion
-
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if(collision.transform.tag == "Level3-Monster")
-        {
-            number -= 5;
-            width -= 30;
-            bloorBarImage.sizeDelta = new Vector2(width, bloorBarImage.sizeDelta.y);
-            bloodBarText.text = number.ToString();
-            ani.SetBool("Injured", true);
-            
-            transform.GetComponent<BoxCollider2D>().isTrigger = true;
-            transform.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
-            if (number >= 41)
-            {
-                number = 40;
-                width = 240;
-                bloorBarImage.sizeDelta = new Vector2(width, bloorBarImage.sizeDelta.y);
-                bloodBarText.text = number.ToString();
-            }
-        }
-
-        else if(transform.childCount >= 3 && collision.transform.tag == "Level3-Monster")
-        {
-            number -= 2;
-            width -= 12;
-            bloorBarImage.sizeDelta = new Vector2(width, bloorBarImage.sizeDelta.y);
-            bloodBarText.text = number.ToString();
-            ani.SetBool("Injured", true);
-            transform.GetComponent<BoxCollider2D>().isTrigger = true;
-            transform.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
-            if (number >= 41)
-            {
-                number = 40;
-                width = 240;
-                bloorBarImage.sizeDelta = new Vector2(width, bloorBarImage.sizeDelta.y);
-                bloodBarText.text = number.ToString();
-            }
-        }
-    }
+    
 }

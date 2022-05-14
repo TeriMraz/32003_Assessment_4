@@ -782,7 +782,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1b0ebf86f8fd684ead58cf1ebb1cccb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  moveSpeed: 2
   EndGame: {fileID: 5234517}
   GameOver: {fileID: 984882812}
   movePoint: {fileID: 1116895326}
