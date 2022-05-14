@@ -36,11 +36,22 @@ public class Level4Button : MonoBehaviour
             }
             
         }
-        if (tip == true)
+       // if (tip == true)
+       // {
+       //     if (Time.time >= 3f)
+       //     {
+       //         tip.SetActive(false);
+        //    }
+       // }
+
+        if(Time.timeSinceLevelLoad >= 3f)
         {
-            if (Time.time >= 3f)
+            if(tip == true)
             {
-                tip.SetActive(false);
+                if(Time.time >= 3f)
+                {
+                    tip.SetActive(false);
+                }
             }
         }
     }

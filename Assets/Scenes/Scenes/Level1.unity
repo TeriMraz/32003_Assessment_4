@@ -241,7 +241,7 @@ GameObject:
   m_Component:
   - component: {fileID: 144310533}
   - component: {fileID: 144310532}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Air Wall
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}

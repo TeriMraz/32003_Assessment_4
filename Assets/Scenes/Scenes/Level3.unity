@@ -610,7 +610,7 @@ GameObject:
   m_Component:
   - component: {fileID: 185190757}
   - component: {fileID: 185190758}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Air Wall (1)
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -3359,7 +3359,7 @@ GameObject:
   m_Component:
   - component: {fileID: 772927013}
   - component: {fileID: 772927014}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Air Wall (4)
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -4158,7 +4158,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1132413632}
   - component: {fileID: 1132413633}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Air Wall (2)
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -5077,7 +5077,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1323651979}
   - component: {fileID: 1323651980}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Air Wall (3)
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -5844,7 +5844,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1526734018}
   - component: {fileID: 1526734019}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Air Wall
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
