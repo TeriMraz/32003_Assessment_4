@@ -138,7 +138,7 @@ public class Level4Button : MonoBehaviour
         //UnityEngine.SceneManagement.SceneManager.LoadScene(0);
         SceneManager.LoadScene(SceneManager.GetSceneAt(0).name);
         //application.LoadLevel("Level1");
-        Time.timeScale = 2f;
+        Time.timeScale = 1f;
     }
 
 }

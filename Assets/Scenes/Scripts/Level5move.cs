@@ -172,8 +172,8 @@ public class Level5move : MonoBehaviour
 
         if (collision.tag == "Stop-2hp")
         {
-            number = number - 40;
-            width = width - 12;
+            number = 1;
+            width = 6;
             bloorBarImage.sizeDelta = new Vector2(width, bloorBarImage.sizeDelta.y);
             bloodBarText.text = number.ToString();
         }
