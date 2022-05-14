@@ -1,6 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.AI;
+using UnityEngine.EventSystems;
+using System;
 
 public class egg02 : MonoBehaviour
 {
@@ -15,9 +19,17 @@ public class egg02 : MonoBehaviour
         bx2d = GetComponent<BoxCollider2D>();
         
     }
+
+    // void ChangeLayer(Transform trans){
+    //     // int count = trans.gameObject.layer.getSiblingIndex();
+    //     trans.gameObject.layer = LayerMask.NameTolayer("StopWalkable");
+    // }
+
     void hardTime(){
                 bx2d.isTrigger = false;
                 bx2d.enabled = true;
+                // ChangeLayer();
+                gameObject.layer = 6;
             }
 
     // Update is called once per frame
@@ -26,11 +38,11 @@ public class egg02 : MonoBehaviour
  
     }
     
-    void OnTriggerEnter2D(Collider2D other){
+    void OnTriggerExit2D(Collider2D other){
         if(other.name=="player")
         {
             anim.SetTrigger("Collapse");
-            Invoke("hardTime",3f);
+            Invoke("hardTime",0.1f);
             hardTime();
         }
     }
