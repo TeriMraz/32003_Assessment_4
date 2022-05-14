@@ -184,13 +184,13 @@ public class Level5move : MonoBehaviour
             EndGame.SetActive(true);
             PlayerPrefs.SetFloat("Score", number);
             float score = PlayerPrefs.GetFloat("Score");
-            if (score > 25)
+            if (score >= 25)
             {
                 starList[0].SetActive(true);
                 starList[1].SetActive(true);
                 starList[2].SetActive(true);
             }
-            else if (score >= 15 && score < 25)
+            else if (score >= 20 && score <= 23)
             {
                 starList[0].SetActive(true);
                 starList[1].SetActive(true);
