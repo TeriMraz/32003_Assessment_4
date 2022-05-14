@@ -16,6 +16,7 @@ TagManager:
   - Partner3
   - FlyDestination
   - Level3-Monster
+  - GameOver
   layers:
   - Default
   - TransparentFX
