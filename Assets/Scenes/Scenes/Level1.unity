@@ -11063,7 +11063,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2537626614072874311, guid: 29fb12e448420f642af737fa43775f77, type: 3}
       propertyPath: m_SortingOrder
-      value: -1
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 4255447611274107492, guid: 29fb12e448420f642af737fa43775f77, type: 3}
       propertyPath: m_Size.x
@@ -32747,7 +32747,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!224 &1976169904
 RectTransform:
